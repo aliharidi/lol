@@ -15,7 +15,7 @@ place:Place;
 
   ngOnInit() {
     this.route.paramMap.subscribe(paramMap=>{
-      if(!paramMap.has('placeId')){
+      if(!paramMap.has('placeId')){///here we check if the place is on the places then wil get the id of it and edit if not it will just back to offer page//////////////
         this.navCtr.navigateBack('/places/tabs/offers');
         return;
       }

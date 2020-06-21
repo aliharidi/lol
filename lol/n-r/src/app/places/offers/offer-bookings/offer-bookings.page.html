@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
+    <ion-buttons slot="start"><!-- here the back button  -->
       <ion-back-button defaultHref="/places/tabs/offers"></ion-back-button>
     </ion-buttons>
     <ion-title> {{ palce.title }} </ion-title>
@@ -8,5 +8,6 @@
 </ion-header>
 
 <ion-content>
+<!-- this button to edit the place you want to edit  -->
 <ion-button margin color="primary" [routerLink]="['/','places','tabs','offers','edit',palce.id]">Edit</ion-button>
 </ion-content>

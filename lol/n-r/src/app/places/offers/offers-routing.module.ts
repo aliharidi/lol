@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { OffersPage } from './offers.page';
+//////this is the all routes of the application///
 
 const routes: Routes = [
   {

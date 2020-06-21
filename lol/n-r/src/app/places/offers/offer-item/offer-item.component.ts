@@ -7,7 +7,7 @@ import { Place } from '../../places.model';
   styleUrls: ['./offer-item.component.scss'],
 })
 export class OfferItemComponent implements OnInit {
-@Input() offer:Place;
+  @Input() offer:Place;
   constructor() { }
 
   ngOnInit() {}

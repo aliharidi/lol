@@ -14,7 +14,7 @@ export class OfferBookingsPage implements OnInit {
 
   constructor(private route:ActivatedRoute,private navCtr:NavController,private placesService:PlacesService) { }
 
-  ngOnInit() {
+  ngOnInit() {///here we check if the place is on the places then wil get the id of it and book if not it will just back to offer page//////////////
     this.route.paramMap.subscribe(paramMap=>{
       if(!paramMap.has('placeId')){
         this.navCtr.navigateBack('/places/tabs/offers');

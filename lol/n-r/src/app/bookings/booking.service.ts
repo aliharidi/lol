@@ -5,7 +5,7 @@ import { Booking } from './booking.model'
 
 @Injectable({providedIn:'root'})
 export class BookingService{
-    private _booking:Booking[]=[
+    private _booking:Booking[]=[////example of a booking place
         {
             id:'xyz',
             placeId:'p1',
@@ -16,7 +16,7 @@ export class BookingService{
         }
     ]
 
-    get bookings(){
+    get bookings(){///return the booked place////
         return [...this._booking];
     }
 

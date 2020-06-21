@@ -9,13 +9,14 @@ import { SegmentChangeEventDetail } from '@ionic/core'
   styleUrls: ['./discover.page.scss'],
 })
 export class DiscoverPage implements OnInit {
-loadedPlaces:Place[];
+loadedPlaces:Place[];////this variable is equal an array of place struct//////
   constructor(private placesService:PlacesService) { }
 
   ngOnInit() {
+        ////here we return the places in loadedPlaces///
     this.loadedPlaces=this.placesService.places;
   }
-
+////function to chech the segment change/////
   onFilterUpdate(event:CustomEvent<SegmentChangeEventDetail>){
     console.log(event.detail);
   }

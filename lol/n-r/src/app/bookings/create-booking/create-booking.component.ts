@@ -16,10 +16,12 @@ export class CreateBookingComponent implements OnInit {
 
 
   onBookPlace(){
+    ///here to show message when comfirm////
     this.modalCtr.dismiss({message:'this is dumy message'},'confirm');
   }
 
   onCancel(){
+    ////here not show anything when cancel////
     this.modalCtr.dismiss(null, 'cancel');
 
   }

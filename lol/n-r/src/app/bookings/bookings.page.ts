@@ -9,14 +9,15 @@ import { IonItemSliding } from '@ionic/angular';
   styleUrls: ['./bookings.page.scss'],
 })
 export class BookingsPage implements OnInit {
-loadedBookings:Booking[];
+loadedBookings:Booking[];///make variable as an array of booking structure////
   constructor(private bookingService:BookingService) { }
 
   ngOnInit() {
+    ///return booking palces to loadedBookings////
     this.loadedBookings=this.bookingService.bookings;
   }
 onCancelBooking(bookingId:string,slidingEl:IonItemSliding)
-{
+{///ffunction to cancel booking////
 slidingEl.close();
 }
 }

@@ -27,10 +27,10 @@ place:Place;
     });
   }
 
-  onBookPlace(){
+  onBookPlace(){///function execute when booking to choose event from action sheet ////
     //this.router.navigateByUrl('/places/tabs/discover');
    // this.navCtr.navigateBack('/places/tabs/discover');
-   this.actionSheetCtr.create(
+   this.actionSheetCtr.create(///create an action sheet/////
      {
        header:'Choose an Action',
        buttons:[
@@ -57,6 +57,7 @@ place:Place;
      actionSheetEl.present();
    })
     }
+    ///function to select from two type of booking /////
 
   openBookingModel(mode:'select'|'random'){
     console.log(mode);
